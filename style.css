@@ -1,0 +1,62 @@
+
+/* display : grid
+grid-template-columns
+grid-template-row
+grid-auto-rows --> new items add hot astil tr
+justify content horizontally align karnya sathi
+align content vertically align karnya sathi
+ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px ;
+    grid-template-rows: 100px 100px ;
+    gap: 4px;
+    grid-auto-rows: 100px;      
+    justify-content: center;
+    height: 200vh;
+    align-content: center;
+    background-color: black;
+    /* border-radius: 5%; */
+}
+
+.item1{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.item2{
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.item4{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.child{
+    background-color: peachpuff;
+    padding: 10px;
+    border-radius: 5px;
+}
